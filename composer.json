@@ -1,12 +1,10 @@
 {
-    "name": "gurpreetsingh/project-security",
+    "name": "gurpreetsinghin/vaults-security",
     "description": "Project SECURITY is a powerful website security app that will protect your website from hackers, attacks and other threats. It could protect your website from SQLi Attacks (SQL Injections), XSS Vulnerabilities, Proxy Visitors, Spammers and many other types of threats.",
-    "authors": [
-        {
-            "name": "Gurpreet Singh",
-            "email": "info@gurpreetsingh.in"
-        }
-    ],
+    "authors": [{
+        "name": "Gurpreet Singh",
+        "email": "info@gurpreetsingh.in"
+    }],
     "minimum-stability": "dev",
     "require": {}
 }
