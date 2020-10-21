@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
 
     <!--Stylesheet-->
-    <link href="{{ asset('vendor/gurpreetsingh/project-security/admin/css/admin.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor/gurpreetsinghin/vaults-security/admin/css/admin.min.css') }}" rel="stylesheet">
 
     <!--Switchery-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/switchery/0.8.2/switchery.min.css" rel="stylesheet">
@@ -131,7 +131,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>	
     <!--Bootstrap-->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="{{ asset('vendor/gurpreetsingh/project-security/admin/js/admin.min.js') }}"></script>
+<script src="{{ asset('vendor/gurpreetsinghin/vaults-security/admin/js/admin.min.js') }}"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.21/r-2.2.5/datatables.min.js"></script>
 
 <script>

@@ -37,10 +37,10 @@ class ProjectSecurityServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/migrations');
         $this->loadViewsFrom(__DIR__.'/views', 'project-security');
         // $this->publishes([
-        //     __DIR__.'/views' => base_path('resources/views/gurpreetsingh/project-security'),
+        //     __DIR__.'/views' => base_path('resources/views/gurpreetsinghin/vaults-security'),
         // ]);
         $this->publishes([
-            __DIR__.'/assets' => public_path('vendor/gurpreetsingh/project-security'),
+            __DIR__.'/assets' => public_path('vendor/gurpreetsinghin/vaults-security'),
         ], 'public');
 
         $this->publishes([

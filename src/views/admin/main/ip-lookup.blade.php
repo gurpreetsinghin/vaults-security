@@ -41,7 +41,7 @@
                                     </label>
                                     <div class="input-group mar-btm">
                                         <span class="input-group-addon">
-                                            <img src="{{ asset('vendor/gurpreetsingh/project-security/admin/plugins/flags/blank.png') }}"
+                                            <img src="{{ asset('vendor/gurpreetsinghin/vaults-security/admin/plugins/flags/blank.png') }}"
                                                 class="flag flag-{{ strtolower($data['countrycode']) }}"
                                                 alt="{{ $data['country'] }}" />
                                         </span>
@@ -114,12 +114,12 @@
                                         <td>{{ $log->ip }}</td>
                                         <td>{{ $log->date }}</td>
                                         <td><img
-                                                src="{{ url('/vendor/gurpreetsingh/project-security/admin/img/icons/browser/') }}/{{ $log->browser_code }}.png" />
+                                                src="{{ url('/vendor/gurpreetsinghin/vaults-security/admin/img/icons/browser/') }}/{{ $log->browser_code }}.png" />
                                             {{ $log->browser }}</td>
                                         <td><img
-                                                src="{{ url('/vendor/gurpreetsingh/project-security/admin/img/icons/os/') }}/{{ $log->os_code }}.png" />
+                                                src="{{ url('/vendor/gurpreetsinghin/vaults-security/admin/img/icons/os/') }}/{{ $log->os_code }}.png" />
                                             {{ $log->os }}</td>
-                                        <td><img src="{{ asset('vendor/gurpreetsingh/project-security/admin/plugins/flags/blank.png') }}"
+                                        <td><img src="{{ asset('vendor/gurpreetsinghin/vaults-security/admin/plugins/flags/blank.png') }}"
                                                 class="flag flag-{{ strtolower($log->country_code) }}"
                                                 alt="{{ $log->country }}" /> {{ $log->country }}</td>
                                         <td><i class="fas fa-user-secret"></i>{{ $log->type }}</td>

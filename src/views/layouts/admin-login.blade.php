@@ -10,7 +10,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
-		<link href="{{ asset('vendor/gurpreetsingh/project-security/admin/css/admin.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('vendor/gurpreetsinghin/vaults-security/admin/css/admin.min.css') }}" rel="stylesheet">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="assets/img/favicon.png">

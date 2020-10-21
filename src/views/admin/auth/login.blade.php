@@ -18,7 +18,7 @@
     <form action="{{ route('ps.admin.login') }}" method="post">
         @csrf
         <div class="login-logo">
-            <a href="#"><img src="{{ asset('vendor/gurpreetsingh/project-security/logos/vaults-logo.png') }}" style="width: 80%;"></a>
+            <a href="#"><img src="{{ asset('vendor/gurpreetsinghin/vaults-security/logos/vaults-logo.png') }}" style="width: 80%;"></a>
         </div>
 
         <div class="card">

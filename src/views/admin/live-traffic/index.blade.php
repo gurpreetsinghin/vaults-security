@@ -84,14 +84,14 @@
                                         <span class="badge badge-primary">Bot</span>
                                         @endif
                                     </td>
-                                    <td><img src="{{ asset('vendor/gurpreetsingh/project-security/admin/plugins/flags/blank.png') }}"
+                                    <td><img src="{{ asset('vendor/gurpreetsinghin/vaults-security/admin/plugins/flags/blank.png') }}"
                                             class="flag flag-{{ strtolower($data->country_code) }}"
                                             alt="{{ $data->country }}" /> {{ $data->country }}</td>
                                     <td><img
-                                            src="{{ url('/vendor/gurpreetsingh/project-security/admin/img/icons/browser/') }}/{{ $data->browser_code }}.png" />
+                                            src="{{ url('/vendor/gurpreetsinghin/vaults-security/admin/img/icons/browser/') }}/{{ $data->browser_code }}.png" />
                                         {{ $data->browser }}</td>
                                     <td><img
-                                            src="{{ url('/vendor/gurpreetsingh/project-security/admin/img/icons/os/') }}/{{ $data->os_code }}.png" />
+                                            src="{{ url('/vendor/gurpreetsinghin/vaults-security/admin/img/icons/os/') }}/{{ $data->os_code }}.png" />
                                         {{ $data->os }}</td>
                                     <td>{{ $data->device_type }}</td>
                                     <td>{{ $data->request_uri }}</td>

@@ -54,11 +54,11 @@
                                 <tr>
                                     <td>{{ $log->ip }}</td>
                                     <td>{{ $log->date }}</td>
-                                    <td><img src="{{ url('/vendor/gurpreetsingh/project-security/admin/img/icons/browser/') }}/{{ $log->browser_code }}.png" />
+                                    <td><img src="{{ url('/vendor/gurpreetsinghin/vaults-security/admin/img/icons/browser/') }}/{{ $log->browser_code }}.png" />
                                         {{ $log->browser }}</td>
-                                    <td><img src="{{ url('/vendor/gurpreetsingh/project-security/admin/img/icons/os/') }}/{{ $log->os_code }}.png" />
+                                    <td><img src="{{ url('/vendor/gurpreetsinghin/vaults-security/admin/img/icons/os/') }}/{{ $log->os_code }}.png" />
                                         {{ $log->os }}</td>
-                                    <td><img src="{{ asset('vendor/gurpreetsingh/project-security/admin/plugins/flags/blank.png') }}"
+                                    <td><img src="{{ asset('vendor/gurpreetsinghin/vaults-security/admin/plugins/flags/blank.png') }}"
                                             class="flag flag-{{ strtolower($log->country_code) }}"
                                             alt="{{ $log->country }}" /> {{ $log->country }}</td>
                                     <td>

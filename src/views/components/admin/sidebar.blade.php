@@ -4,7 +4,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4 bg-black">
 <!-- <i class="fab fa-get-pocket"></i> -->
     <center><a href="{{ route('ps.admin.dashboard') }}" class="brand-link bg-black">
-            <span class="brand-text font-weight-light"> <img src="{{ asset('vendor/gurpreetsingh/project-security/logos/vaults-logo.png') }}" style="width: 80%;"></span>
+            <span class="brand-text font-weight-light"> <img src="{{ asset('vendor/gurpreetsinghin/vaults-security/logos/vaults-logo.png') }}" style="width: 80%;"></span>
         </a></center>
 
     <div class="sidebar">

@@ -1,5 +1,5 @@
 <?php
-Route::group(['prefix' => 'project-security', 'namespace' => 'Gurpreetsinghin\VaultsSecurity\Controllers', 'middleware' => ['web']], function(){
+Route::group(['prefix' => 'vaults-security', 'namespace' => 'Gurpreetsinghin\VaultsSecurity\Controllers', 'middleware' => ['web']], function(){
 
     Route::get('/', function(){
         if(!auth()->check()){

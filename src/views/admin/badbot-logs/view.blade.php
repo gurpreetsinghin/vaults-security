@@ -64,7 +64,7 @@
                                     <div class="input-group mar-btm">
                                         <span class="input-group-addon">
                                             <img
-                                                src="{{ url('/vendor/gurpreetsingh/project-security/admin/img/icons/browser/') }}/{{ $log->browser_code }}.png" />
+                                                src="{{ url('/vendor/gurpreetsinghin/vaults-security/admin/img/icons/browser/') }}/{{ $log->browser_code }}.png" />
                                         </span>
                                         <input type="text" class="form-control" value="{{ $log->browser }}" readonly>
                                     </div>
@@ -78,7 +78,7 @@
                                     <div class="input-group mar-btm">
                                         <span class="input-group-addon">
                                             <img
-                                                src="{{ url('/vendor/gurpreetsingh/project-security/admin/img/icons/os/') }}/{{ $log->os_code }}.png" />
+                                                src="{{ url('/vendor/gurpreetsinghin/vaults-security/admin/img/icons/os/') }}/{{ $log->os_code }}.png" />
                                         </span>
                                         <input type="text" class="form-control" value="{{ $log->os }}" readonly>
                                     </div>
@@ -94,7 +94,7 @@
                                     </label>
                                     <div class="input-group mar-btm">
                                         <span class="input-group-addon">
-                                            <img src="{{ asset('vendor/gurpreetsingh/project-security/admin/plugins/flags/blank.png') }}"
+                                            <img src="{{ asset('vendor/gurpreetsinghin/vaults-security/admin/plugins/flags/blank.png') }}"
                                                 class="flag flag-{{ strtolower($log->country_code) }}"
                                                 alt="{{ $log->country }}" />
                                         </span>

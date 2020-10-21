@@ -588,7 +588,7 @@
                         '%'.$country.'%')->first(); @endphp
                         @if(!empty($result))
                         <tr>
-                            <td><img src="{{ asset('vendor/gurpreetsingh/project-security/admin/plugins/flags/blank.png') }}"
+                            <td><img src="{{ asset('vendor/gurpreetsinghin/vaults-security/admin/plugins/flags/blank.png') }}"
                                     class="flag flag-{{ strtolower($result->country_code) }}"
                                     alt="{{ $country }}" /> {{ $country }}</td>
                             <td>{{ $result->count() }}</td>
