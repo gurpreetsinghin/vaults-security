@@ -2,7 +2,7 @@
 ## Steps to install
 1. Include the following line in config/app.php
 ```php
-Gurpreetsingh\ProjectSecurity\ProjectSecurityServiceProvider::class,
+Gurpreetsinghin\VaultsSecurity\ProjectSecurityServiceProvider::class,
 ```
 2. Publish the vendor first.
 ```php
