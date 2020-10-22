@@ -6,7 +6,7 @@ Gurpreetsinghin\VaultsSecurity\ProjectSecurityServiceProvider::class,
 ```
 2. Publish the vendor first.
 ```php
-php artisan vendor:publish
+php artisan vendor:publish --provider="Gurpreetsinghin\VaultsSecurity\ProjectSecurityServiceProvider"
 ```
 3. Run Migration
 ```bash
