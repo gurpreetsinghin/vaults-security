@@ -5,13 +5,14 @@ namespace Gurpreetsinghin\VaultsSecurity;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Arr;
 use Gurpreetsinghin\VaultsSecurity\Traits\Core;
+use Gurpreetsinghin\VaultsSecurity\Traits\Config;
 use Gurpreetsinghin\VaultsSecurity\Traits\VaultsSecurity;
 
 class ProjectSecurityServiceProvider extends ServiceProvider
 {
 
 
-    use Core, VaultsSecurity;
+    use Config, Core, VaultsSecurity;
 
     /**
      * Register services.
@@ -47,13 +48,33 @@ class ProjectSecurityServiceProvider extends ServiceProvider
             __DIR__.'/config/auth.php' => config_path('auth.php')
         ], 'config');
         
-        if(isset($_SERVER['HTTP_HOST'])){
-            $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-            if (strpos($actual_link, url('/project-security')) === false) {
-                // dd('dsssd');
-                $this->securityCheck();
+        // dd(\Schema::hasTable('users'));
+
+        $pdo = \DB::connection()->getPdo();
+
+        if($pdo){
+
+            $table = $this->prefix()."settings";
+            if(\Schema::hasTable($table) != false){ 
+
+                if(isset($_SERVER['HTTP_HOST'])){
+                    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+                    if (strpos($actual_link, url('/vaults-security')) === false) {
+                        $this->securityCheck();
+                    }
+                }
             }
+        } else {
+            echo "- Could not connect to the database.  Please check your configuration.<br>";
         }
+
+        // if(isset($_SERVER['HTTP_HOST'])){
+        //     $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        //     if (strpos($actual_link, url('/project-security')) === false) {
+        //         // dd('dsssd');
+        //         $this->securityCheck();
+        //     }
+        // }
     }
 
     protected function mergeConfigFrom($path, $key)

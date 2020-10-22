@@ -211,8 +211,7 @@
                                 <strong><i class="fas fa-keyboard"></i> Spam</strong><br />Protection<br />
                                 <hr />
 
-                                @if ($setting['spam']->protection == 1 || $setting['spam']->protection2 == 1 ||
-                                $setting['spam']->protection3 == 1)
+                                @if ($setting['spam']->protection == 1 )
                                 <h4><span class="badge badge-success"><i class="fas fa-check"></i> ON</span></h4>
                                 @else
                                 <h4><span class="badge badge-danger"><i class="fas fa-times"></i> OFF</span></h4>

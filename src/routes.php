@@ -113,6 +113,7 @@ Route::group(['prefix' => 'vaults-security', 'namespace' => 'Gurpreetsinghin\Vau
                 Route::post('add', 'ipBanController@add')->name('ps.admin.ip-ban.add');
                 Route::any('edit/{id}', 'ipBanController@edit')->name('ps.admin.ip-ban.edit');
                 Route::any('delete/{id}', 'ipBanController@delete')->name('ps.admin.ip-ban.delete');
+                Route::any('delete-all', 'ipBanController@deleteAll')->name('ps.admin.ip-ban.delete-all');
             });
 
             Route::group(['prefix' => 'country-ban'], function(){

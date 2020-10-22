@@ -74,4 +74,13 @@ class ipBanController extends Controller
         }
     }
 
+    public function deleteAll(){
+        try{
+            DB::table($this->prefix().'bans')->truncate();
+            return back()->with('success', 'Deleted successfully!');
+        }catch(\Illuminate\Database\QueryException $ex){
+            return back()->with('error', $ex->getMessage());
+        }
+    }
+
 }

@@ -6,18 +6,18 @@ use Illuminate\Database\Seeder;
 use DB;
 use Gurpreetsinghin\VaultsSecurity\Traits\Config;
 
-class DatabaseSeeder extends Seeder
+class VaultsSeeder extends Seeder
 {
 
     use Config;
 
     public function run()
     {
-        // $this->sqli_settings();
-        // $this->badbot_settings();
-        // $this->proxy_settings();
-        // $this->spam_settings();
-        // $this->dnsbl_databases();
+        $this->sqli_settings();
+        $this->badbot_settings();
+        $this->proxy_settings();
+        $this->spam_settings();
+        $this->dnsbl_databases();
         $this->adblocker_settings();
     }
 

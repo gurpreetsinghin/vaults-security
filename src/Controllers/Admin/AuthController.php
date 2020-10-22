@@ -57,6 +57,11 @@ class AuthController extends Controller{
             }
         }else{
 
+            $table = $this->prefix()."settings";
+            if(\Schema::hasTable($table) == false){
+                die("- <strong>Vaults Security</strong> : Please run 'php artisan migrate' first!<br>");
+            }
+
             $users = DB::table($this->prefix()."settings")->get();
 
             if($users->isEmpty()){
@@ -68,6 +73,7 @@ class AuthController extends Controller{
     }
 
     public function addUser(Request $request){
+
         
         if($request->isMethod('post')){
 
@@ -87,6 +93,11 @@ class AuthController extends Controller{
             }else{
                 return redirect()->back()->with('error', 'Server error occurred. Please try again later!.');
             }
+        }
+
+        $table = $this->prefix()."settings";
+        if(\Schema::hasTable($table) == false){
+            die("- <strong>Vaults Security</strong> : Please run 'php artisan migrate' first!<br>");
         }
 
         return view('project-security::admin.auth.add-user');

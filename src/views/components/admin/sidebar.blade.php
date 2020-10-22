@@ -121,25 +121,25 @@
                 </li>
 
                 <li class="nav-item ">
-                    <a href="{{ route('ps.admin.adblocker-detection') }}" class="nav-link ">
+                    <a href="{{ route('ps.admin.adblocker-detection') }}" class="nav-link {{ Route::currentRouteName() == 'ps.admin.adblocker-detection' ? 'active' : '' }}">
                         <i class="fas fa-window-maximize"></i>&nbsp; <p>AdBlocker Detection {!! $sidebar->adBlockerSettings() !!}</p></a>
                 </li>
 
                 <li class="nav-item ">
-                    <a href="{{ route('ps.admin.bad-words') }}" class="nav-link ">
+                    <a href="{{ route('ps.admin.bad-words') }}" class="nav-link {{ Route::currentRouteName() == 'ps.admin.bad-words' ? 'active' : '' }}">
                         <i class="fas fa-filter"></i>&nbsp; <p>Bad Words {!! $sidebar->badWords() !!}</p></a>
                 </li>
 
                 <li class="nav-header">SECURITY CHECK</li>
 
-                <li class="nav-item ">
-                    <a href="{{ route('ps.admin.php-functions-check') }}" class="nav-link ">
+                <li class="nav-item {{ Route::currentRouteName() == 'ps.admin.php-functions-check' ? 'active' : '' }}">
+                    <a href="{{ route('ps.admin.php-functions-check') }}" class="nav-link {{ Route::currentRouteName() == 'ps.admin.php-functions-check' ? 'active' : '' }}">
                         <i class="fas fa-check"></i>&nbsp; <p>PHP Functions</p>
                     </a>
                 </li>
 
-                <li class="nav-item ">
-                    <a href="{{ route('ps.admin.php-config-check') }}" class="nav-link ">
+                <li class="nav-item {{ Route::currentRouteName() == 'ps.admin.php-config-check' ? 'active' : '' }}">
+                    <a href="{{ route('ps.admin.php-config-check') }}" class="nav-link {{ Route::currentRouteName() == 'ps.admin.php-config-check' ? 'active' : '' }}">
                         <i class="fab fa-php"></i>&nbsp; <p>PHP Configuration</p>
                     </a>
                 </li>
@@ -147,22 +147,22 @@
                 <li class="nav-header">ANALYTICS &nbsp; {!! $sidebar->anaytics() !!}
                 </li>
 
-                <li class="nav-item ">
-                    <a href="{{ route('ps.admin.live-traffic') }}" class="nav-link ">
+                <li class="nav-item {{ Route::currentRouteName() == 'ps.admin.live-traffic' ? 'active' : '' }}">
+                    <a href="{{ route('ps.admin.live-traffic') }}" class="nav-link {{ Route::currentRouteName() == 'ps.admin.live-traffic' ? 'active' : '' }}">
                         <i class="fas fa-globe"></i>&nbsp; <p>Live Traffic</p>
                     </a>
                 </li>
 
-                <li class="nav-item ">
-                    <a href="{{ route('ps.admin.visit-analytics') }}" class="nav-link ">
+                <li class="nav-item {{ Route::currentRouteName() == 'ps.admin.visit-analytics' ? 'active' : '' }}">
+                    <a href="{{ route('ps.admin.visit-analytics') }}" class="nav-link {{ Route::currentRouteName() == 'ps.admin.visit-analytics' ? 'active' : '' }}">
                         <i class="fas fa-chart-line"></i>&nbsp; <p>Visit Analytics</p>
                     </a>
                 </li>
 
                 <li class="nav-header">TOOLS</li>
 
-                <li class="nav-item ">
-                    <a href="{{ route('ps.admin.error-monitoring') }}" class="nav-link ">
+                <li class="nav-item {{ Route::currentRouteName() == 'ps.admin.error-monitoring' ? 'active' : '' }}">
+                    <a href="{{ route('ps.admin.error-monitoring') }}" class="nav-link {{ Route::currentRouteName() == 'ps.admin.error-monitoring' ? 'active' : '' }}">
                         <i class="fas fa-exclamation-circle"></i>&nbsp; <p>Error Monitoring</p>
                     </a>
                 </li>
@@ -173,20 +173,20 @@
                     </a>
                 </li> -->
 
-                <li class="nav-item ">
-                    <a href="{{ route('ps.admin.port-scanner') }}" class="nav-link ">
+                <li class="nav-item {{ Route::currentRouteName() == 'ps.admin.port-scanner' ? 'active' : '' }}">
+                    <a href="{{ route('ps.admin.port-scanner') }}" class="nav-link {{ Route::currentRouteName() == 'ps.admin.port-scanner' ? 'active' : '' }}">
                         <i class="fas fa-search"></i>&nbsp; <p>Port Scanner</p>
                     </a>
                 </li>
 
-                <li class="nav-item ">
-                    <a href="{{ route('ps.admin.blacklist-checker') }}" class="nav-link ">
+                <li class="nav-item {{ Route::currentRouteName() == 'ps.admin.blacklist-checker' ? 'active' : '' }}">
+                    <a href="{{ route('ps.admin.blacklist-checker') }}" class="nav-link {{ Route::currentRouteName() == 'ps.admin.blacklist-checker' ? 'active' : '' }}">
                         <i class="fas fa-list"></i>&nbsp; <p>IP Blacklist Checker</p>
                     </a>
                 </li>
 
-                <li class="nav-item ">
-                    <a href="{{ route('ps.admin.hashing') }}" class="nav-link ">
+                <li class="nav-item {{ Route::currentRouteName() == 'ps.admin.hashing' ? 'active' : '' }}">
+                    <a href="{{ route('ps.admin.hashing') }}" class="nav-link {{ Route::currentRouteName() == 'ps.admin.hashing' ? 'active' : '' }}">
                         <i class="fas fa-lock"></i>&nbsp; <p>Hashing</p>
                     </a>
                 </li>

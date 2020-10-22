@@ -56,7 +56,7 @@ class WhitelistController extends Controller
 
     public function ipDelete($id){
         try{
-            DB::table($this->prefix().'ip-whitelist')->find($id)->delete();
+            DB::table($this->prefix().'ip-whitelist')->where('id', $id)->delete();
             return back()->with('success', 'IP Deleted Successfully!');
         }catch(\Illuminate\Database\QueryException $ex){
             return back()->with('error', $ex->getMessage());
@@ -107,7 +107,7 @@ class WhitelistController extends Controller
 
     public function fileDelete($id){
         try{
-            DB::table($this->prefix().'file-whitelist')->find($id)->delete();
+            DB::table($this->prefix().'file-whitelist')->where('id', $id)->delete();
             return back()->with('success', 'IP Deleted Successfully!');
         }catch(\Illuminate\Database\QueryException $ex){
             return back()->with('error', $ex->getMessage());

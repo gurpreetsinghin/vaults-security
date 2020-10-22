@@ -33,7 +33,7 @@
                     </div>
                     <div class="card-body">
 
-                        <center><a href="?delete-all" class="btn btn-flat btn-danger" title="Delete all IP Bans"><i
+                        <center><a href="{{ route('ps.admin.ip-ban.delete-all') }}" class="btn btn-flat btn-danger" title="Delete all IP Bans"><i
                                     class="fas fa-trash"></i> Delete All</a></center>
 
                         <table id="dt-basic" class="table table-striped table-bordered table-hover" cellspacing="0"
