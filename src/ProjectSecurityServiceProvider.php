@@ -56,11 +56,13 @@ class ProjectSecurityServiceProvider extends ServiceProvider
 
             $table = $this->prefix()."settings";
             if(\Schema::hasTable($table) != false){ 
-
-                if(isset($_SERVER['HTTP_HOST'])){
-                    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-                    if (strpos($actual_link, url('/vaults-security')) === false) {
-                        $this->securityCheck();
+                $setting = \DB::table($this->prefix().'settings')->first();
+                if(!empty($setting)){
+                    if(isset($_SERVER['HTTP_HOST'])){
+                        $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+                        if (strpos($actual_link, url('/vaults-security')) === false) {
+                            $this->securityCheck();
+                        }
                     }
                 }
             }
